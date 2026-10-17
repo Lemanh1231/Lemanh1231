@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="230" viewBox="0 0 600 230" role="img" aria-labelledby="title"><title id="title">HyperLyric-Spotify-Provider-Fix — Spotify Lyricon provider compatibility &amp; battery optimizer.</title><style>
+  text{font-family:Inter,'Segoe UI',Arial,sans-serif} .mono{font-family:'Cascadia Code','SFMono-Regular',Consolas,monospace}
+  .pulse{animation:pulse 3s ease-in-out infinite} .cursor{animation:blink 1.2s steps(1) infinite}
+  .float{animation:float 9s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}} @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important} .typing{clip-path:none!important}}
+</style><defs></defs><rect x=".5" y=".5" width="599" height="229" rx="18" fill="#090c16" stroke="#222b42"/>
+    <rect x="1" y="27" width="3" height="176" rx="1.5" fill="#ff4d6d"/>
+    <text x="24" y="34" font-size="11" fill="#ff4d6d" class="mono" letter-spacing="1.7">03 / ANDROID EXTENSION</text>
+    <text x="24" y="82" font-size="30" fill="#f3f5ff" font-weight="700" letter-spacing="-.5">HyperLyric-Spotify-Provider-Fix</text>
+    <text x="24" y="120" font-size="22" fill="#9ba5be" >Spotify lyrics provider &amp; battery optimizer.</text>
+    <text x="24" y="191" font-size="13" fill="#ff4d6d" class="mono" letter-spacing="1.2">KOTLIN / LSPATCH / SPOTIFY API</text>
+    <text x="573" y="193" font-size="24" fill="#ff4d6d" text-anchor="end">↗</text></svg>

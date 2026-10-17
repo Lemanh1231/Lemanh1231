@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="230" viewBox="0 0 600 230" role="img" aria-labelledby="title"><title id="title">pro5 — A cyber anime profile, terminal intro &amp; responsive music player.</title><style>
+  text{font-family:Inter,'Segoe UI',Arial,sans-serif} .mono{font-family:'Cascadia Code','SFMono-Regular',Consolas,monospace}
+  .pulse{animation:pulse 3s ease-in-out infinite} .cursor{animation:blink 1.2s steps(1) infinite}
+  .float{animation:float 9s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}} @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important} .typing{clip-path:none!important}}
+</style><defs></defs><rect x=".5" y=".5" width="599" height="229" rx="18" fill="#0c1020" stroke="#283250"/>
+    <rect x="1" y="27" width="3" height="176" rx="1.5" fill="#b5a0ff"/>
+    <text x="24" y="34" font-size="11" fill="#b5a0ff" class="mono" letter-spacing="1.7">03 / PERSONAL SPACE</text>
+    <text x="24" y="82" font-size="30" fill="#edf0ff" font-weight="700" letter-spacing="-.5">pro5</text>
+    <text x="24" y="120" font-size="22" fill="#a2abc5" >A cyber anime profile with a terminal intro.</text>
+    <text x="24" y="191" font-size="13" fill="#b5a0ff" class="mono" letter-spacing="1.2">HTML / CSS / JAVASCRIPT / NGINX</text>
+    <text x="573" y="193" font-size="24" fill="#b5a0ff" text-anchor="end">↗</text></svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="266" viewBox="0 0 1200 266" role="img" aria-labelledby="title"><title id="title">Profile terminal — leman</title><style>
+  text{font-family:Inter,'Segoe UI',Arial,sans-serif} .mono{font-family:'Cascadia Code','SFMono-Regular',Consolas,monospace}
+  .pulse{animation:pulse 3s ease-in-out infinite} .cursor{animation:blink 1.2s steps(1) infinite}
+  .float{animation:float 9s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}} @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important} .typing{clip-path:none!important}}
+</style><defs><clipPath id="typing"><rect x="68" y="60" width="230" height="40"><animate attributeName="width" values="0;230;230" keyTimes="0;.28;1" dur="8s" repeatCount="indefinite"/></rect></clipPath></defs><rect x=".5" y=".5" width="1199" height="265" rx="18" fill="#090c16" stroke="#222b42"/>
+    <path d="M0 48H1200" stroke="#222b42"/>
+    <circle cx="40" cy="24" r="4" fill="#ff4d6d"/><circle cx="57" cy="24" r="4" fill="#ffd166"/><circle cx="74" cy="24" r="4" fill="#5ce1e6"/>
+    <text x="1160" y="29" font-size="12" fill="#9ba5be" class="mono" text-anchor="end">leman@shittim-chest: ~</text>
+    <text x="40" y="90" font-size="23" fill="#5ce1e6" class="mono">❯</text>
+    <g class="typing" clip-path="url(#typing)"><text x="68" y="90" font-size="21" fill="#f3f5ff" class="mono">cat player.yml</text></g>
+    <text x="40" y="135" font-size="18" fill="#9ba5be" class="mono">handle</text><text x="190" y="135" font-size="20" fill="#b894fc" class="mono">@lemanh1231</text>
+    <text x="40" y="173" font-size="18" fill="#9ba5be" class="mono">quests</text><text x="190" y="173" font-size="20" fill="#f3f5ff" class="mono">game server emulators · audio streaming · Android modding</text><text x="40" y="216" font-size="18" fill="#9ba5be" class="mono">next_arc</text><text x="190" y="216" font-size="20" fill="#5ce1e6" class="mono">keep building</text>
+    <rect x="358" y="197" width="10" height="23" rx="1" fill="#5ce1e6" class="cursor"/></svg>
