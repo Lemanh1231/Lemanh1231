@@ -12,9 +12,14 @@
 
 <sub>プラナの世界 &nbsp; / &nbsp; A LITTLE CORNER OF MY WORLD</sub>
 
-<a href="#about"><kbd>01 · ABOUT</kbd></a> &nbsp; <a href="#arsenal"><kbd>02 · ARSENAL</kbd></a> &nbsp; <a href="#projects"><kbd>03 · PROJECTS</kbd></a> &nbsp; <a href="#connect"><kbd>04 · CONNECT</kbd></a>
+<p align="center">
+  <a href="#about"><kbd>&nbsp;01 · ABOUT&nbsp;</kbd></a> &nbsp;
+  <a href="#arsenal"><kbd>&nbsp;02 · ARSENAL&nbsp;</kbd></a><br>
+  <a href="#projects"><kbd>&nbsp;03 · PROJECTS&nbsp;</kbd></a> &nbsp;
+  <a href="#connect"><kbd>&nbsp;04 · CONNECT&nbsp;</kbd></a>
+</p>
 
-**Một chút code. Một chút âm nhạc. Rất nhiều đam mê.**
+<h3>Một chút code · Một chút âm nhạc · Rất nhiều đam mê</h3>
 
 <sub>Building little things that make the everyday a little better.</sub>
 

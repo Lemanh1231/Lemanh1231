@@ -46,27 +46,27 @@ function pill(x, y, label, color = C.violet, size = 13) {
 
 // 1. Cover / Hero Banner (Responsive Desktop & Mobile) featuring PLANA
 for (const mobile of [false, true]) {
-  const w = mobile ? 600 : 1200, h = mobile ? 640 : 460;
+  const w = mobile ? 600 : 1200, h = mobile ? 560 : 460;
   const defs = `<clipPath id="canvas"><rect width="${w}" height="${h}" rx="24"/></clipPath>
-    <linearGradient id="shade" x2="1" y2=".25"><stop stop-color="#090c16" stop-opacity=".92"/><stop offset=".55" stop-color="#090c16" stop-opacity=".45"/><stop offset="1" stop-color="#090c16" stop-opacity=".15"/></linearGradient>
+    <linearGradient id="shade" x2="1" y2=".25"><stop stop-color="#090c16" stop-opacity=".94"/><stop offset=".55" stop-color="#090c16" stop-opacity=".65"/><stop offset="1" stop-color="#090c16" stop-opacity=".25"/></linearGradient>
     <linearGradient id="bottom" x2="0" y2="1"><stop stop-color="#090c16" stop-opacity="0"/><stop offset="1" stop-color="#090c16" stop-opacity=".96"/></linearGradient>
     <linearGradient id="accent"><stop stop-color="${C.cyan}"/><stop offset=".5" stop-color="${C.rose}"/><stop offset="1" stop-color="${C.violet}"/></linearGradient>
-    <clipPath id="portrait"><circle cx="${mobile ? 480 : 966}" cy="${mobile ? 122 : 212}" r="${mobile ? 67 : 105}"/></clipPath>`;
-  const inset = mobile ? 34 : 62;
+    <clipPath id="portrait"><circle cx="${mobile ? 485 : 966}" cy="${mobile ? 120 : 212}" r="${mobile ? 72 : 105}"/></clipPath>`;
+  const inset = mobile ? 32 : 62;
   let s = `<g clip-path="url(#canvas)"><rect width="${w}" height="${h}" fill="${C.bg}"/>
     <image href="${bg}" x="0" y="0" width="${w}" height="${h}" preserveAspectRatio="xMidYMid slice"/>
     <rect width="${w}" height="${h}" fill="url(#shade)"/>
     <rect width="${w}" height="${h}" fill="url(#bottom)"/>
     <path d="M${w*.66} 0L${w*.52} ${h}M${w*.68} 0L${w*.54} ${h}" stroke="${C.rose}" stroke-opacity=".12" stroke-width="1"/>
-    <rect x="${inset}" y="${mobile?40:38}" width="6" height="6" rx="1" fill="${C.cyan}" class="pulse"/>
-    ${text(inset+18,mobile?47:45,'LEMAN / PERSONAL SPACE',mobile?14:13,C.cyan,'class="mono" letter-spacing="2"')}
-    ${text(inset,mobile?174:126,'AFTER HOURS · SHITTIM CHEST OS',mobile?16:14,C.rose,'class="mono" letter-spacing="5"')}
-    ${text(inset-4,mobile?260:245,'LEMAN',mobile?90:128,C.ink,'font-weight="800" letter-spacing="-5"')}
-    <path d="M${inset} ${mobile?326:304}H${mobile?530:620}" stroke="url(#accent)" stroke-opacity=".75" stroke-width="2"/>
-    ${text(inset,mobile?374:346,'Code. Music. Anime. Repeat.',mobile?26:23,C.ink,'font-weight="500"')}
-    ${text(inset,mobile?412:382,'Shittim Chest Operating System online_',mobile?17:15,C.muted,'class="mono"')}`;
+    <rect x="${inset}" y="${mobile?42:38}" width="${mobile?8:6}" height="${mobile?8:6}" rx="2" fill="${C.cyan}" class="pulse"/>
+    ${text(inset+(mobile?20:18),mobile?50:45,'LEMAN / PERSONAL SPACE',mobile?15:13,C.cyan,'class="mono" letter-spacing="2"')}
+    ${text(inset,mobile?156:126,'AFTER HOURS · SHITTIM CHEST OS',mobile?15:14,C.rose,'class="mono" letter-spacing="4"')}
+    ${text(inset-4,mobile?245:245,'LEMAN',mobile?86:128,C.ink,'font-weight="800" letter-spacing="-4"')}
+    <path d="M${inset} ${mobile?295:304}H${mobile?536:620}" stroke="url(#accent)" stroke-opacity=".75" stroke-width="2.5"/>
+    ${text(inset,mobile?342:346,'Code. Music. Anime. Repeat.',mobile?26:23,C.ink,'font-weight="600"')}
+    ${text(inset,mobile?380:382,'Shittim Chest Operating System online_',mobile?17:15,C.muted,'class="mono"')}`;
   
-  const cx = mobile?480:966, cy = mobile?122:212, r = mobile?67:105;
+  const cx = mobile?485:966, cy = mobile?120:212, r = mobile?72:105;
   s += `<g class="float"><circle cx="${cx}" cy="${cy}" r="${r+17}" fill="${C.bg}" fill-opacity=".3" stroke="${C.rose}" stroke-opacity=".35"/>
     <circle cx="${cx}" cy="${cy}" r="${r+8}" fill="none" stroke="${C.cyan}" stroke-opacity=".7" stroke-dasharray="3 12"/>
     <image href="${avatar}" x="${cx-r}" y="${cy-r}" width="${r*2}" height="${r*2}" clip-path="url(#portrait)"/>
@@ -76,14 +76,14 @@ for (const mobile of [false, true]) {
     s += `${text(cx,361,'夜の余白',18,C.ink,'text-anchor="middle" letter-spacing="6"')}
       ${text(cx,387,'PLANA · THE QUIET BETWEEN COMMITS',10,C.muted,'class="mono" text-anchor="middle" letter-spacing="1.4"')}`;
   } else {
-    s += pill(inset,465,'DEV / AUDIO / AUTOMATION',C.violet,15);
-    s += text(inset,572,'夜の余白 / PLANA · SHITTIM CHEST',13,C.muted,'class="mono"');
+    s += pill(inset,418,'DEV / AUDIO / AUTOMATION',C.violet,15);
+    s += text(inset,500,'夜の余白 / PLANA · SHITTIM CHEST',14,C.muted,'class="mono"');
   }
   for (let i=0;i<12;i++) {
     const x=(i*137+741)%w, y=(i*73+66)%(h-60);
     s += `<circle cx="${x}" cy="${y}" r="${i%3===0?2:1}" fill="${i%2?C.cyan:C.rose}" opacity=".45" class="pulse" style="animation-delay:${i*.3}s"/>`;
   }
-  s += `<path d="M${inset} ${h-23}H${w-inset}" stroke="${C.line}"/>${text(inset,h-9,'SYSTEM // SHITTIM CHEST',9,C.muted,'class="mono" letter-spacing="1.6"')}${text(w-inset,h-9,'ARCHIVE 01',9,C.muted,'class="mono" text-anchor="end" letter-spacing="1.6"')}</g>
+  s += `<path d="M${inset} ${h-28}H${w-inset}" stroke="${C.line}"/>${text(inset,h-12,'SYSTEM // SHITTIM CHEST',11,C.muted,'class="mono" letter-spacing="1.6"')}${text(w-inset,h-12,'ARCHIVE 01',11,C.muted,'class="mono" text-anchor="end" letter-spacing="1.6"')}</g>
     <rect x=".5" y=".5" width="${w-1}" height="${h-1}" rx="24" fill="none" stroke="${C.rose}" stroke-opacity=".25"/>`;
   save(mobile?'hero-mobile':'hero',svg(w,h,'Leman — After Hours / Shittim Chest',s,defs));
 }
